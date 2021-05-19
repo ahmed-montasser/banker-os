@@ -166,6 +166,7 @@ int main() {
 
 			if (sum_current == past_sum && flag2==false) {
 				cout << endl << "No , Not Safe state \n";
+				system("pause");
 				return 0;
 			}
 
@@ -194,13 +195,15 @@ int main() {
 		}
 
 		if (!compare_LessOrEqual_vector(request[index_request], need[index_request])) {
-			cout << "Error condition, The Process has exceeded its maximum claim.";
+			cout << "Error condition, The Process has exceeded its maximum claim.\n";
+			system("pause");
 			return 0; // End Program
 		}
 		
 
 		if (!compare_LessOrEqual_vector(request[index_request],available)) {
-			cout <<"P" << index_request << " must wait, as the resources are not available.";
+			cout <<"P" << index_request << " must wait, as the resources are not available.\n";
+			system("pause");
 			return 0; // End Program
 		}
 
