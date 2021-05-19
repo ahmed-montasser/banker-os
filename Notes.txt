@@ -1,0 +1,4 @@
+- This implementation was developed using VS Studio 2015 .
+- Source.cpp is found inside “OS Banker” folder
+- Link to Source.cpp :
+https://github.com/ahmed-montasser/banker-os/blob/master/OS%20Banker/Source.cpp
