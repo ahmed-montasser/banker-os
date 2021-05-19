@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<iomanip>
+
 using namespace std;
 
 void fill_vector(int n, int m, vector<vector<int>>& a) {
@@ -20,6 +21,7 @@ void fill_vector(int n, int m, vector<vector<int>>& a) {
 
 int main() {
 
+
 	int m; // Number of Resources
 	int n; // Number of Processes
 	int input; // Input Variable
@@ -37,10 +39,10 @@ int main() {
 	// Reading Available Vector (START)
 	cout << "Enter Available vector" << endl;
 
-	for (int i = 0; i++; i < m) {
+	for (int i = 0; i < m ; i++) {
 		cout << "R" << i << " : " ;
 		cin >> input;
-		available.push_back(input);
+		available[i]=input;
 	}
 
 	// *********************************************************************************************
@@ -84,9 +86,66 @@ int main() {
 		}
 	}
 	// *********************************************************************************************
+	// User enters request
+
+	int req = -1;
+	cout << endl << "Please enter \"1\" to check safe state \n or \"2\" to check immediate request possibility \n or \"0\" to exit : ";
+	cin >> req;
+	cout << endl;
+	if (req == 0) {
+		cout << "Thank U" << endl;
+	}
+	else if (req == 1) {
+
+		//**********************************************************************************************
+		//Safe Algorithm
+
+		vector<int> work(available);
+
+		vector<bool> finish(n);
+		int index;
+		bool flag;
+		bool flag2 = false;
+		index = -1;
+		while (!flag2) {
+			flag2 = true;
+			for (int i = 0; i < n; i++) {
+				flag = true;
+				if (!finish[i]) {
+					for (int j = 0; j < m; j++) {
+						if (need[i][j] > work[j])
+						{
+							flag = false;
+							break;
+						}
+					}
+					if (flag) { index = i; }
+
+				}
+
+				if (index != -1) {
+					finish[index] = true;
+					for (int i = 0; i < m; i++) {
+						work[i] += allocation[index][i];
+					}
+					
+					cout << "P" << index << " ";
+
+					index = -1;
+				}
+			}
 
 
+			for (int i = 0; i < n; i++) {
+				if (!finish[i]) {
+					flag2=false;
+				}
+			}
+		}
+		cout << endl << "System is in safe state \n";
+	}
 
+	else if(req ==2){}
 	system("pause");
 	return 0;
 }

@@ -1,4 +1,4 @@
-﻿Build started 5/18/2021 12:07:18 PM.
+﻿Build started 5/19/2021 3:41:28 AM.
      1>Project "D:\Sourcesprog\Visual Studio 2015\Projects\OS Banker\OS Banker\OS Banker.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          D:\Sourcesprog\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
@@ -10,4 +10,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.53
+Time Elapsed 00:00:01.28
