@@ -1,16 +1,34 @@
-﻿Build started 5/19/2021 7:19:10 AM.
+﻿Build started 5/20/2021 10:29:41 AM.
      1>Project "D:\Sourcesprog\Visual Studio 2015\Projects\OS Banker\OS Banker\OS Banker.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Sourcesprog\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         D:\Sourcesprog\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
          Source.cpp
      1>d:\sourcesprog\visual studio 2015\projects\os banker\os banker\source.cpp(23): warning C4018: '<': signed/unsigned mismatch
      1>d:\sourcesprog\visual studio 2015\projects\os banker\os banker\source.cpp(176): warning C4018: '<': signed/unsigned mismatch
      1>d:\sourcesprog\visual studio 2015\projects\os banker\os banker\source.cpp(301): warning C4018: '<': signed/unsigned mismatch
        Link:
          D:\Sourcesprog\Visual Studio 2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Sourcesprog\Visual Studio 2015\Projects\OS Banker\Debug\OS Banker.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Sourcesprog\Visual Studio 2015\Projects\OS Banker\Debug\OS Banker.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Sourcesprog\Visual Studio 2015\Projects\OS Banker\Debug\OS Banker.lib" /MACHINE:X86 Debug\Source.obj
-         OS Banker.vcxproj -> D:\Sourcesprog\Visual Studio 2015\Projects\OS Banker\Debug\OS Banker.exe
-     1>Done Building Project "D:\Sourcesprog\Visual Studio 2015\Projects\OS Banker\OS Banker\OS Banker.vcxproj" (Build target(s)).
+     1>Source.obj : error LNK2005: "public: class std::basic_istream<char,struct std::char_traits<char> > & __thiscall std::basic_istream<char,struct std::char_traits<char> >::operator>>(int &)" (??5?$basic_istream@DU?$char_traits@D@std@@@std@@QAEAAV01@AAH@Z) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator<<(int)" (??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator<<(class std::basic_ostream<char,struct std::char_traits<char> > & (__cdecl*)(class std::basic_ostream<char,struct std::char_traits<char> > &))" (??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator<<(class std::ios_base & (__cdecl*)(class std::ios_base &))" (??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAVios_base@1@AAV21@@Z@Z) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: void __thiscall std::basic_ostream<char,struct std::char_traits<char> >::_Osfx(void)" (?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: char __thiscall std::basic_ios<char,struct std::char_traits<char> >::fill(void)const " (?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: int __thiscall std::ios_base::flags(void)const " (?flags@ios_base@std@@QBEHXZ) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::flush(void)" (?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: bool __thiscall std::ios_base::good(void)const " (?good@ios_base@std@@QBE_NXZ) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)" (?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@D@Z) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: class std::basic_streambuf<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::rdbuf(void)const " (?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: int __thiscall std::ios_base::setf(int,int)" (?setf@ios_base@std@@QAEHHH@Z) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: void __thiscall std::basic_ios<char,struct std::char_traits<char> >::setstate(int,bool)" (?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char)" (?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputn(char const *,__int64)" (?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::tie(void)const " (?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: char __thiscall std::basic_ios<char,struct std::char_traits<char> >::widen(char)const " (?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDD@Z) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: __int64 __thiscall std::ios_base::width(__int64)" (?width@ios_base@std@@QAE_J_J@Z) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Source.obj : error LNK2005: "public: __int64 __thiscall std::ios_base::width(void)const " (?width@ios_base@std@@QBE_JXZ) already defined in msvcprtd.lib(MSVCP140D.dll)
+     1>Done Building Project "D:\Sourcesprog\Visual Studio 2015\Projects\OS Banker\OS Banker\OS Banker.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.60
+Time Elapsed 00:00:06.48
